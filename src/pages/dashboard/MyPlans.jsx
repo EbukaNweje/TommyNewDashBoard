@@ -23,7 +23,7 @@ const MyPlans = () => {
         setLoading(true);
         try {
             const response = await axios.get(
-                'https://my-broker-back-end.vercel.app/api/getallplan'
+                'https://unixswap-coin-user-account.vercel.app/api/getallplan'
             );
             console.log(response.data.data);
             

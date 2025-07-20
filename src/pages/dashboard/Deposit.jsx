@@ -71,7 +71,7 @@ const handleProceed = () => {
 };
 
 const handlegetallWalletAddress = async () => {
-    await axios.get('https://my-broker-back-end.vercel.app/api/getallWalletAddress')
+    await axios.get('https://unixswap-coin-user-account.vercel.app/api/getallWalletAddress')
         .then(response => {
              setWallets(response?.data?.data)
         })

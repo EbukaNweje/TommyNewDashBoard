@@ -36,7 +36,7 @@ const DashboardHome = () => {
     // const userName = userDatas?.userName
     // console.log("this is UserName", userName)
     const [state, setState] = useState({
-        value: `https://swifteatrnprime.vercel.app/ref/`,
+        value: `https://unixswap-coin.vercel.app/ref/`,
         copied: false,
       });
 
@@ -47,7 +47,7 @@ const DashboardHome = () => {
   setLoading(true);
   try {
     const response = await axios.get(
-      `https://my-broker-back-end.vercel.app/api/userdata/${finalId}`
+      `https://unixswap-coin-user-account.vercel.app/api/userdata/${finalId}`
     );
     setUserDatas(response?.data?.data);
     console.log(response?.data?.data);
