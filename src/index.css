@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* color{
+  small fade text - [#8094ae]
+  big text bold black - [#364a63]
+  normal text black - [#526484]
+  purple bg - [#a286f4]
+  grey bg - [#f5f6fa]
+} */
+
+.dropdown {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out,
+      visibility 0.25s ease-in-out;
+  will-change: transform;
+}
+
+.dropdown.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s cubic-bezier(0, 1, 0.4, 1),
+      transform 0.8s cubic-bezier(0.18, 1.25, 0.4, 1), visibility 0.4s linear;
+  transform: scale(1);
+}
+
+.ant-drawer-body {
+  padding: 0 !important;
+}
