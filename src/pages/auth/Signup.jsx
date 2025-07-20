@@ -269,7 +269,7 @@ const Signup = () => {
       </div>
       <div className="w-full phone:h-24 phone:gap-3 phone:flex-col phone:justify-center phone:py-4 h-14 text-white px-48 flex items-center justify-between bg-[#0e1120]">
         <div className="w-max flex items-center gap-4">
-        <p className="flex gap-5 items-center text-white">&copy;  Copy Rights {currentYear}. All Rights Reserved Unixswap Trad Ecu</p>
+        <p className="flex gap-5 items-center text-white">&copy;  Copy Rights {currentYear}. All Rights Reserved Unixswap-Coin</p>
         </div>
         <div className="w-max flex items-center gap-5 ">
           <FaTwitter />

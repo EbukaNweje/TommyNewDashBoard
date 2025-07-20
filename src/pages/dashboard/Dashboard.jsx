@@ -13,7 +13,7 @@ const Dashboard = () => {
                     <Outlet />
                 </div>
                 <div className="w-full h-16 bg-[#0f3951]">
-                <p className="flex gap-5 items-center text-white">&copy;  Copy Rights {currentYear}. All Rights Reserved Unixswap Trad Ecu</p>
+                <p className="flex gap-5 items-center text-white">&copy;  Copy Rights {currentYear}. All Rights Reserved Unixswap-Coin</p>
                  </div>
             </div>
         </>
