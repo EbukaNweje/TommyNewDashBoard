@@ -38,11 +38,11 @@ const Forgottenpassword = () => {
             setLoading(false)
             console.log(res);
             toast.success(res.data.message) 
-            Nav('/')
+            // Nav('/')
         }).catch( Error => {
             setLoading(false)
             console.log(Error);
-            toast.error(Error.response.message)
+            toast.error(Error.response.data.message)
         })
       }
 
@@ -84,13 +84,13 @@ const Forgottenpassword = () => {
                         // onClick={() => Nav('/reset-password')}
                         className="w-40 h-12 rounded bg-[#a286f4] text-white text-sm font-bold transition-all duration-500 hover:bg-white hover:border-2 hover:text-[#a286f4] hover:border-[#a286f4]"
                     >
-                        Confirm
+                     { loading ? <ClipLoader color='white' /> :
+                               "Confirm "}
                     </button>
                     <div className="w-max phone:w-full phone:justify-between phone:gap-0 h-max flex gap-80 text-sm text-[#a286f4]">
                         <NavLink to={"/register"}>
                             <div className="w-max h-max cursor-pointer">
-                           { loading ? <ClipLoader color='white' /> :
-                               " Create Account"}
+                               Create Account
                             </div>
                         </NavLink>
                     </div>
