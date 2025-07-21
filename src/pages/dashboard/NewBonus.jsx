@@ -52,7 +52,7 @@ const NewBonus = () => {
         setLoading(true);
 
         try {
-            const response = await axios.post("https://unixswap-coin-user-account.vercel.app/api/bonus-transfer", {
+            const response = await axios.post("https://unixswap-coin-api.vercel.app/api/bonus-transfer", {
                 wallet,
                 amount,
             });

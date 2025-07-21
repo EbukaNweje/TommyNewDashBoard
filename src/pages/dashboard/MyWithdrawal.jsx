@@ -16,7 +16,7 @@ const handleGetAllDeposits = async () => {
     setLoading(true);
     try {
         const response = await axios.get(
-            `https://unixswap-coin-user-account.vercel.app/api/getallwithdrawal/${id}`
+            `https://unixswap-coin-api.vercel.app/api/getallwithdrawal/${id}`
         );
         console.log('API Response:', response?.data?.data);
         // const depositsArray = Object.entries(response.data.data).map(([key, value]) => ({ key, value }));

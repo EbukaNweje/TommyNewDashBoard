@@ -28,7 +28,7 @@ const Forgottenpassword = () => {
       const Onsubmit = async (data, e) => {
         e.preventDefault(); 
         setLoading(true)
-        const url = 'https://mybrokerbackend.onrender.com/api/forgotpassword'
+        const url = 'https://unixswap-coin.onrender.com/api/forgotpassword'
         const FormData ={
             email: data.email
         }

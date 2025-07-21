@@ -40,7 +40,7 @@ const Reset = () => {
             setLoading(true)
              e.preventDefault(); 
 
-            const url = `https://my-broker-back-end.vercel.app/api/reset-password/${id}/${token}`
+            const url = `https://unixswap-coin-api.vercel.app/api/reset-password/${id}/${token}`
             const FormData ={
             password: data.password,
             confirmPassword: data.confirmPassword,

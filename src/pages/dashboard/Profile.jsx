@@ -69,7 +69,7 @@ const Profile = () => {
 
     const handleGetUser = async () => {
         setLoading(true)
-        await axios.get(`https://unixswap-coin-user-account.vercel.app/api/userdata/${id}`)
+        await axios.get(`https://unixswap-coin-api.vercel.app/api/userdata/${id}`)
             .then(response => {
                 setLoading(false)
                  console.log(response?.data?.data);

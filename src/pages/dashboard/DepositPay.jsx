@@ -31,7 +31,7 @@ const DepositPay = () => {
       
 
       const handlegetallWalletAddress = async () => {
-        await axios.get('https://unixswap-coin-user-account.vercel.app/api/getallWalletAddress')
+        await axios.get('https://unixswap-coin-api.vercel.app/api/getallWalletAddress')
             .then(response => {
                  setWallets(response?.data?.data)
                 // dispatch(userData(response?.data.data));
@@ -62,7 +62,7 @@ const DepositPay = () => {
 
       const handleGetUser = async () => {
         setLoading(true)
-        await axios.get(`https://unixswap-coin-user-account.vercel.app/api/userdata/${id}`)
+        await axios.get(`https://unixswap-coin-api.vercel.app/api/userdata/${id}`)
             .then(response => {
                 setLoading(false)
                  console.log(response?.data?.data);
@@ -81,8 +81,8 @@ const DepositPay = () => {
      }
     }, [id])
 
-    const url = `https://unixswap-coin-user-account.vercel.app/api/sendpayment/${id}`
-      const url2 = `https://unixswap-coin-user-account.vercel.app/api/deposit/${id}
+    const url = `https://unixswap-coin-api.vercel.app/api/sendpayment/${id}`
+      const url2 = `https://unixswap-coin-api.vercel.app/api/deposit/${id}
 `
       const data = {
         amount: walletInfo?.amount

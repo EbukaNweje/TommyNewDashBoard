@@ -47,7 +47,7 @@ const DashboardHome = () => {
   setLoading(true);
   try {
     const response = await axios.get(
-      `https://unixswap-coin-user-account.vercel.app/api/userdata/${finalId}`
+      `https://unixswap-coin-api.vercel.app/api/userdata/${finalId}`
     );
     setUserDatas(response?.data?.data);
     console.log(response?.data?.data);

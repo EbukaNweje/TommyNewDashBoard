@@ -79,7 +79,7 @@ const Signup = () => {
       })
 
     }
-    const url = 'https://my-broker-back-end.vercel.app/api/register'
+    const url = 'https://unixswap-coin-api.vercel.app/api/register'
     const FormData ={
       password: data.password,
       email: data.email,
