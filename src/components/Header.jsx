@@ -218,9 +218,9 @@ const handleNavToPlan = () => {
                                 <FaUserCircle size={28} onClick={() => Nav('profile')}/>
                             </div>
                             <div className="w-max h-max flex flex-col phone:hidden">
-                                    {
+                                    {/* {
                                         userDatas?.verify === true ? <p className="text-xs font-semibold text-green-500"> verified </p> : <p className="text-xs font-semibold text-red-500"> Unverified</p>
-                                    }
+                                    } */}
                                 <p className="w-max flex items-center text-xs font-semibold">
                                  { laoding ? <ClipLoader color='white' /> :  `${userDatas?.firstName} ${userDatas?.lastName} ${" "}`}
                                     <span>
