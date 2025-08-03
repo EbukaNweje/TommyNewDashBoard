@@ -232,7 +232,7 @@ const roundedNumber = parseFloat(bitcoinValue.toFixed(8));
                     </p>
                     <button
                         className="w-max h-max px-5 py-2 rounded text-white font-semibold bg-[#a286f4]"
-                        onClick={Wrr}
+                        onClick={sendWallet}
                     >  { clickMe ? <ClipLoader color='white' /> :  ' Proceed'}
                        
                     </button>
